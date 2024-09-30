@@ -4,25 +4,24 @@ interface PostOwnerProps{
     userImagePath: string;
     username: string;
     postText: string;
-    likenum: number;
-
+    likeNum: number;
 }
 export type {PostOwnerProps};
 
 interface CommentProps{
-userImagePath: string;
-username: string;
-commentText: string;
-likenum: number;
-replies: ReplyProps[];
+    username: string;
+    userImagePath: string;
+    commentText: string;
+    likeNum: number;
+    replies: ReplyProps[];
 }
 export type {CommentProps};
 
 
 interface ReplyProps {
-replyImagePath: string;
-username: string;
-replyText: string;
-likenum: number;
+    username: string;
+    replyImagePath: string;
+    replyText: string;
+    likeNum: number;
 }
 export type { ReplyProps };

@@ -3,7 +3,7 @@ import { PostOwnerProps } from "@/libs/types";
 import { CommentProps } from "@/libs/types";
 import { ReplyProps } from "@/libs/types";
 
-export default function PostOwnner({userImagePath, username, postText, likenum}:PostOwnerProps) {
+export default function PostOwnner({userImagePath, username, postText, likeNum}:PostOwnerProps) {
   return <div className="vstack gap-3">
   <div className="d-flex align-items-center gap-3">
     <img
@@ -18,10 +18,10 @@ export default function PostOwnner({userImagePath, username, postText, likenum}:
 
   <span>{postText}</span>
 
-  { likenum > 0 &&
+  { likeNum > 0 &&
     <div className="d-flex align-items-center gap-1">
       <img src="/like.svg" width={20}></img>
-      <span className="text-muted">{likenum} คน</span>
+      <span className="text-muted">{likeNum} คน</span>
     </div>
   }
   <hr className="m-0 border" />
